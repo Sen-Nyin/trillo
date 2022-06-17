@@ -1,3 +1,10 @@
+$bp-xl: 75em;       // 1200px
+$bp-l: 68.75em;     // 1100px
+$bp-m: 65.25em;     // 900px
+$bp-s: 37.5em;      // 600px
+$bp-xs: 31.25em;    // 500px
+$bp-xxs: 28.875em;  // 430px
+
 :root {
     --color-primary: #eb2f64;
     --color-primary-light: #FF3366;
@@ -16,7 +23,6 @@
     --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
 
     --line: 1px solid var(--color-grey-light-2);
-
 }
 
 * {
@@ -33,6 +39,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-l) {
+        font-size: 50%;
+    }
 }
 
 body {
